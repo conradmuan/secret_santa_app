@@ -1,0 +1,2 @@
+sudo npm install -g jake jshint@0.5.2 csslint uglify-js
+npm install express jasmine-node@1.0.22 jWorkflow
