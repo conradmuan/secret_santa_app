@@ -1,0 +1,32 @@
+@import "sticky_footer.less";
+
+.list-of-people {
+	list-style:none;
+	padding:0;
+	margin:0;
+
+	li {
+		.clearfix;
+		height:22px;
+		padding:8px 5px;
+		margin:0 0 5px 0;
+		.remove-person {
+			display:none;
+			float:right;
+		}
+
+		&:hover {
+			background:#DFF0D8;
+			.remove-person{
+				display:block;
+			}
+		}
+		.are-you-sure {
+			display:none;
+		}
+	}
+}
+
+#match-it {
+	margin-top:10px;
+}
