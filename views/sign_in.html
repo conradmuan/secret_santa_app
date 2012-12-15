@@ -23,10 +23,16 @@
 		<div id="sign-in-container">
 			<h1>This is a Super Secret Santa App</h1>
 			<h2>Sign in</h2>
-			<form action="" class="form-signin">
+
+			<div class="alert alert-error">
+				<button data-dismiss="alert" type="button" class="close">&times;</button>
+				<strong>Uh Oh. </strong>Wrong Username / Password combination
+			</div>
+
+			<form action="list.html" method="post" class="form-signin">
 				<input type="email" class="input-block-level" placeholder="Email Address">
 				<input type="password" class="input-block-level" placeholder="Password">
-				<input type="button" class="btn btn-primary" name="login" value="Sign In">
+				<button type="submit" class="btn btn-primary" name="login">Sign In</button>
 				<a href="create_account.html">Create an Account</a>
 			</form>
 		</div><!--#sign-in-container-->

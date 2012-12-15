@@ -21,7 +21,7 @@
 </head>
 <body id="list">
 	<div id="wrap">
-		<div class="container-fluid narrow">
+		<div class="container-fluid narrower">
 			<div class="row-fluid">
 				<div class="span12">
 					<div class="page-header">
@@ -30,7 +30,18 @@
 				</div><!--span12-->
 			</div><!--row-fluid-->
 			<div class="row-fluid">
-				<div class="span7">
+				<div class="alert alert-success">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<strong>Success! </strong> your Secret Santa Participants have been matched.
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12">
+					<a href="add_person.html" type="button">Invite a guy</a>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="well">
 					<ul class="list-of-people">
 						<li> John Smith <button type="button" class="btn btn-mini btn-danger remove-person"><i class="icon-remove icon-white"></i> Delete</button></li>
 						<li> John Smith <button type="button" class="btn btn-mini btn-danger remove-person"><i class="icon-remove icon-white"></i> Delete</button></li>
@@ -44,10 +55,10 @@
 		</div><!--container-fluid-->
 	</div><!--wrap-->
 	<div id="footer">
-		<div class="container-fluid narrow">
+		<div class="container-fluid narrower">
 			<form action="" id="match-it">
 				<button type="submit" class="btn btn-info">Match!</button>
-				<a href="#logout">Log Out</a>
+				<a href="sign_in.html">Log Out</a>
 			</form>
 		</div>
 	</div>
