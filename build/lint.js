@@ -40,8 +40,7 @@ function _lintCSS(files, done) {
 }
 
 module.exports = function (done, files) {
-    var cssDirs = ["lib", "test"];
-    _lintJS(files && files.length > 0 ? files : ["."], function () {
-        _lintCSS(files && files.length > 0 ? files : cssDirs, done);
-    });
+    var cssDirs = ["lib", "test"],
+        lintDirs = ["lib", "test"];
+    _lintJS(lintDirs && lintDirs.length > 0 ? lintDirs: ["."], done);
 };

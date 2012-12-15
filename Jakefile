@@ -22,7 +22,7 @@ task('build', [], require('./build/build'));
 
 desc("run all tests in node - jake test [path,path2]");
 task('test', [], function () {
-    require('./build/test')(null, process.argv.length >= 4 ? process.argv[3] : null);
+    require('./build/test');
 });
 
 desc("runs jshint + csslint - jake lint [path1] [path2]");
