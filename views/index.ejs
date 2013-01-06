@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<%= include partial/html_head %>
+<body id="sign-in">
+	<div class="container">
+		<div id="sign-in-container">
+			<h1>This is a Super Secret Santa App</h1>
+			<h2>Sign in</h2>
+
+			<div class="alert alert-error">
+				<button data-dismiss="alert" type="button" class="close">&times;</button>
+				<strong>Uh Oh. </strong>Wrong Username / Password combination
+			</div>
+
+			<form action="/list" method="post" class="form-signin">
+				<input type="email" class="input-block-level" placeholder="Email Address">
+				<input type="password" class="input-block-level" placeholder="Password">
+				<button type="submit" class="btn btn-primary" name="login">Sign In</button>
+				<a href="/create_account">Create an Account</a>
+			</form>
+		</div><!--#sign-in-container-->
+	</div><!--.container-->
+</body>
 </html>
